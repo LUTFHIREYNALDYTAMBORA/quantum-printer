@@ -2986,9 +2986,9 @@ Google map
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 1em;
+  gap: 7em;
   animation: spin 30s infinite linear;
-  padding-right: 1em;
+  padding-right: 7em;
 }
 
 .card {
