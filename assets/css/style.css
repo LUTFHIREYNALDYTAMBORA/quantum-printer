@@ -2,12 +2,18 @@
 	Common
 --------------------------------------------------------------*/
 html {
+  width: 100%; /* Ensure full width */
+  margin: 0;   /* Remove default margin */
+  padding: 0;  /* Remove default padding */
   overflow-y: scroll;
   overflow-x: hidden;
   -ms-overflow-style: scrollbar;
 }
 
 body {
+  width: 100%; /* Ensure full width */
+  margin: 0;   /* Remove default margin */
+  padding: 0;  /* Remove default padding */
   background: #fff;
   font: 400 12px/1.8 "Open Sans", sans-serif;
   color: #666;
@@ -163,7 +169,7 @@ a,
 .module,
 .module-small {
   position: relative;
-  padding: 70px 0px;
+  padding: 40px 0px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;

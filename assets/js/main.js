@@ -233,6 +233,17 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             }
         });
 
+        // Close navbar-collapse on outside click
+        $(document).on('click', function (e) {
+            var $navbarCollapse = $('.navbar-collapse');
+            var $navbarToggle = $('.navbar-toggle');
+
+            // Check if the clicked target is outside the navbar-collapse and not the toggle button
+            if (!$navbarCollapse.is(e.target) && $navbarCollapse.has(e.target).length === 0 && !$navbarToggle.is(e.target) && $navbarToggle.has(e.target).length === 0 && $navbarCollapse.hasClass('in')) {
+                $navbarCollapse.collapse('hide');
+            }
+        });
+
 
         /* ---------------------------------------------- /*
          * Video popup, Gallery
