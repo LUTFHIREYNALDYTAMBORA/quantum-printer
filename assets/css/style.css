@@ -3105,3 +3105,28 @@ input:checked + .slider:before {
     text-align: center;
   }
 }
+
+/* WhatsApp Widget */
+.whatsapp-widget {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-widget:hover {
+  color: #FFF;
+  background-color: #128C7E;
+}
