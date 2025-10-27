@@ -3085,3 +3085,17 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* Custom Footer Styles */
+.footer-content-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .footer-content-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
