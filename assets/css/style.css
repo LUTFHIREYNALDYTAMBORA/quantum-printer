@@ -2969,7 +2969,7 @@ Google map
   width: 100%;
   display: flex;
   background: white;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .carousel::-webkit-scrollbar {
