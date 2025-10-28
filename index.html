@@ -337,70 +337,36 @@
             <h2 class="module-title font-alt" data-key="our_partners_title">Our Partners</h2>
           </div>
         </div>
-        <div class="carousel">
-          <div class="group">
-            <div class="card">
-              <img class="partner-logo" src="assets/img/sony.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/adelle.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/lotte.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/havaianas.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/locci.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/watsons.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/tarbak.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/starbak.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/maternal.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/security.png" alt="" />
-            </div>
+        <div class="owl-carousel owl-theme">
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/sony.png" alt="Sony Logo" />
           </div>
-          <div aria-hidden class="group">
-            <div class="card">
-              <img class="partner-logo" src="assets/img/sony.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/adelle.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/lotte.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/havaianas.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/locci.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/watsons.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/tarbak.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/starbak.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/maternal.png" alt="" />
-            </div>
-            <div class="card">
-              <img class="partner-logo" src="assets/img/security.png" alt="" />
-            </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/adelle.png" alt="Adelle Logo" />
+          </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/lotte.png" alt="Lotte Logo" />
+          </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/havaianas.png" alt="Havaianas Logo" />
+          </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/locci.png" alt="Locci Logo" />
+          </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/watsons.png" alt="Watsons Logo" />
+          </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/tarbak.png" alt="Tarbak Logo" />
+          </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/starbak.png" alt="Starbak Logo" />
+          </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/maternal.png" alt="Maternal Logo" />
+          </div>
+          <div class="partner-item">
+            <img class="partner-logo" src="assets/img/security.png" alt="Security Logo" />
           </div>
         </div>
       </section>
@@ -603,11 +569,29 @@
       toggle.addEventListener('change', () => {
         setLanguage(toggle.checked ? 'en' : 'id');
       });
+
+      // Initialize Owl Carousel for partners
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: false,
+        dots: true,
+        responsive: {
+          0: {
+            items: 2
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      });
     });
-  </script>
-  <script>
-    var copy = document.querySelector(".logos-slide").cloneNode(true);
-    document.querySelector(".logos").appendChild(copy);
   </script>
   <script src="assets/lib/jquery/dist/jquery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
